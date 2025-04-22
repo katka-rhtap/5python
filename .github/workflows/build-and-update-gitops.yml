@@ -72,7 +72,7 @@ jobs:
       with:
         script: |
           const vars = {
-            IMAGE_REGISTRY: `${{ vars.IMAGE_REGISTRY }}`,
+            IMAGE_REGISTRY: `${{ secrets.IMAGE_REGISTRY }}`,
 
             ROX_CENTRAL_ENDPOINT: `${{ vars.ROX_CENTRAL_ENDPOINT }}`, 
             /*GITOPS_AUTH_USERNAME: `${{ vars.GITOPS_AUTH_USERNAME }}`, */
